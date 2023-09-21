@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Advertencia</class>
+ <widget class="QMainWindow" name="Advertencia">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>270</width>
+    <height>80</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>270</width>
+    <height>80</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Cargando...</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 245, 226);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="LblAdvertencia">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>250</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Buscando puertos COM...</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

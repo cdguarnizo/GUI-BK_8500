@@ -1,0 +1,24 @@
+Para actualizar el arcvhivo ui en un py que se pueda importar en el pyw se usa:
+pyuic5 -x Nombre_archivo.ui -o Nombre_archivo_ui.py
+
+Para la ventana principal del control de la carga:
+pyuic5 -x Carga_electronica.ui -o Carga_electronica_ui.py
+
+Para la ventana de advertencia:
+pyuic5 -x Ventana_advertencia.ui -o Ventana_advertencia_ui.py
+
+
+pyinstaller --onefile --icon=Icono_4.png Interfaz_Carga.spec
+
+
+from Elementos_propios import BotonIluminado
+
+self.LblDesconectado.setGeometry(QtCore.QRect(67, 70, 26, 26))
+        tam=self.LblDesconectado.geometry().getRect()
+        esc=[el/112.5222328226425*dpi for el in tam]
+        self.LblDesconectado.setGeometry(QtCore.QRect(*esc))
+        radio = 12 / 112.5222328226425 * dpi
+        borde = 2 / 112.5222328226425 * dpi
+        self.LblDesconectado.setStyleSheet(f"border-radius: {radio}px; border: {borde}px groove gray;\n"
+"border-style: outset;\n"
+"background-color: rgb(203, 203, 203);")
